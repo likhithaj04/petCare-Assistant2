@@ -12,7 +12,7 @@ dotenv.config();
 const app = express()
 
 app.use(express.json())
-app.use(cors({ origin: "http://localhost:5173" }))
+app.use(cors({ origin: "https://pet-care-assistant2.vercel.app/" }))
 
 const pc = new Pinecone({
   apiKey: process.env.PINECONE_API_KEY,
