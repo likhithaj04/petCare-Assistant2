@@ -12,7 +12,7 @@ dotenv.config();
 const app = express()
 
 app.use(express.json())
-app.use(cors({ origin: "https://pet-care-assistant2.vercel.app/" ,
+app.use(cors({ origin: "https://pet-care-assistant2.vercel.app" ,
     credentials: true 
 
 }))
