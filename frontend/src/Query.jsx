@@ -12,7 +12,7 @@ export default function Query() {
     setLoading(true);
 
     try {
-      const res = await fetch("https://petcare-assistant2.onrender.com", {
+      const res = await fetch("https://petcare-assistant2.onrender.com/query", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
