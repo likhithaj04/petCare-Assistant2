@@ -44,7 +44,10 @@ export default function Query() {
             Pet Care Assistant 🐾
           </h1>
           <p className="text-gray-600 mt-2">
-            Ask anything about your pet
+             about your pet
+          </p>
+          <p className="text-gray-600 mt-2">
+            Eg: "What food should i give to my 3 month puppy", "Vaccine for 1 year old dog"
           </p>
         </div>
 

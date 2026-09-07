@@ -12,7 +12,12 @@ dotenv.config();
 const app = express()
 
 app.use(express.json())
-app.use(cors({ origin: "https://pet-care-assistant2.vercel.app" ,
+// app.use(cors({ origin: "https://pet-care-assistant2.vercel.app" ,
+//     credentials: true 
+
+// }))
+
+app.use(cors({ origin: "http://localhost:5173" ,
     credentials: true 
 
 }))
@@ -23,7 +28,7 @@ const pc = new Pinecone({
 
 const llm = new ChatGroq({
   apiKey: process.env.GROQ_API_KEY,
-  model: "llama-3.1-8b-instant",
+  model: "openai/gpt-oss-20b",
 })
 
 
